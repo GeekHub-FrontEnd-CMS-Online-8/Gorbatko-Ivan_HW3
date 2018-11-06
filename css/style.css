@@ -1,0 +1,45 @@
+.a4 {
+    width: 690px;
+    margin: auto;
+    padding: 40px 100px;
+    background-color: #fff4d2;
+}
+body {
+    width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+	background-color: #263238
+}
+#already {
+    width: 250px;
+}
+#email {
+    width: 250px;
+}
+#birthday {
+    width: 250px;
+}
+#social {
+    width: 250px;
+}
+#married {
+    width: 250px;
+}
+#location {
+    width: 250px;
+}
+#anketa2 {
+	height:20px;
+	resize: none;
+}
+p.interval
+{ 
+    margin: auto;
+    }
+fieldset.marg
+{
+    margin-top: 20px;
+}
+textarea.comment{
+margin-top: -12px;
+}

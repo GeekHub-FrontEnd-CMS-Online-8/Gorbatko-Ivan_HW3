@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок "Формы": теги и их атрибутты.</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="a4">
+<h1>Урок "Формы": теги и их атрибутты.</h1>
+<h2>Расскажите немного о себе...</h2>
+<form method="get" name="anketa" id="anketa" action="https://geekhub-frontend-cms-8.herokuapp.com/" enctype="text/plain">
+    <fieldset>
+        <legend id="legend"><strong>Коротко о себе</strong></legend>
+        <p><label for="firstname">Имя:<input type="text" name="firstname" id="firstname" required></label></p>
+        <p><label for="lastname">Фамилия:<input type="text" name="lastname" id="lastname" required></label></p>
+        <p> Пол:<label for="man">
+            <input type="radio" name="sex" id="man" value="man" required checked="checked">мужской
+            </label>
+            <label for="women">
+            <input type="radio" name="sex" id="women" value="women" required>женский
+            </label></p>		
+        <p><label for ="gender">Возраст:<input type="text" name="gender" id="gender" maxlength="3" size="5" required>
+        </label></p>
+    </fieldset>
+    <fieldset class="marg">
+        <legend id="legend2"><strong>Подробнее о себе</strong></legend>
+        <p> <label for="boy">
+                 <input type="radio" name="gender2" id="boy" value="boy" required checked="checked"> Молодой человек
+            </label></p>
+        <p>
+            <label for="girl">
+            <input type="radio" name="gender2" id="girl" value="girl" required> Девушка
+            </label></p>
+        <p class="interval">
+        <label for="birthday">
+            <input type="date" id="birthday" name="birthday" required >Дата рождения:
+        </label> </p>
+		<p class="interval">
+            <label for="married">
+                <input type="text" id="married" name="married" required >Семейное положение:
+            </label></p>
+		<p class="interval">
+            <label for="social">
+            <input type="text" id="social" name="social" required >Социальный статус:
+        </label></p>
+		<p class="interval">
+            <label for="location">
+            <input type="text" id="location" name="location" required >Местожительство:
+        </label></p>
+        <p><strong>Что вы обычно делаете на выходных:</strong></p>
+        <p><label for="sleep">
+                <input type="checkbox" name="sleep" id="sleep" value="sleep"> Сплю
+        </label></p>
+        <p><label for="drink">
+                <input type="checkbox" name="drink" id="drink" value="drink"> Гуляю с друзьями
+            </label></p>
+        <p><label for="fishing">
+                <input type="checkbox" name="fishing" id="fishing" value="fishing"> Хожу на рыбалку
+            </label></p>
+        <p><label for="game">
+            <input type="checkbox" name="game" id="game" value="game"> Играю в игры
+        </label></p>
+       
+        <p><strong>Рассказать о формах в книге, посвященной HTML:</strong></p>
+        <p>
+            <select size="1" name="HTML5" title="Рассказать о формах в книге, посвященной HTML:">
+                <option disabled selected>Site frequency:</option>
+                <option value="accept-charset">accept-charset</option>
+                <option value="action">action</option>
+                <option value="autocomplete">autocomplete</option>
+                <option value="enctype">enctype</option>
+                <option value="method">method</option>
+                <option value="name">name</option>
+                <option value="novalidate">novalidate</option>
+                <option value="target">target</option>
+                <option value="other">other</option>
+            </select>
+        </p>
+        <p><strong>Сколько книг вы прочитали за свою жизнь:</strong></p>
+        <p class="interval"><label for="ten"><input type="radio" name="book" id="ten" value="ten">0-10</label></p>
+        <p class="interval"><label for="twenty"><input type="radio" name="book" id="twenty" value="twelve">11-20</label></p>
+        <p class="interval"><label for="fifty"><input type="radio" name="book" id="fifty" value="fifty">21-50</label></p>
+        <p class="interval"><label for="more"><input type="radio" name="book" id="more" value="more">50+</label></p>
+        <p><strong>Ваши комментарии:</strong></p>
+        <textarea form="anketa" title="Комментарий:" rows="10" cols="45" maxlength="450" wrap="hard" class="comment">
+        </textarea>
+        <p>
+			<select size="3" name="pozition" title="pozition">
+                <option value="v1">Первая позиция</option>
+                <option value="v2" selected>Вторая позиция</option>
+                <option value="v3">Третья позиция</option>
+                <option value="v4">Четвертая позииия</option>
+                <option value="v5">Пятая позиция</option>
+                <option value="v6">Шестая позиция</option>
+                <option value="v7">Седьмая позиция</option>
+                <option value="v8">Восьмая позиция</option>
+                <option value="v9">Девятая позиция</option>
+            </select>
+		</p>
+    </fieldset>
+    <fieldset class="marg">
+        <legend id="legend3"><strong>И в заключении</strong></legend>
+        <p>
+            <label for="already">
+                <input type="text" disabled value="Это поле было введено до вас" name="already" id="already"></label>
+        </p>
+        <label for="email"><strong>Email:</strong><br>
+            <input type="email" name="email" id="email">
+        </label>
+<p><strong>Хотите подписаться на самую модную рассылку спама?</strong></p>
+        <p><em>Выберите категории</em></p>
+        <p class="interval"><label for="equipment"><input type="checkbox" id="equipment" name="equipment" value="equipment"> Оборудование</label></p>
+        <p class="interval"><label for="cooking"><input type="checkbox" id="cooking" name="cooking" value="cooking"> Как приготовить обеды</label></p>
+        <p class="interval"><label for="spam"><input type="checkbox" id="spam" name="spam" value="spam"> Как заработать миллион за 2 дня</label></p>
+        <p><strong> На сколько сложная задача:</strong></p>
+        <p class="interval"><label for="easy"><input id="easy" value="easy" type="radio" name="task" checked="checked">Совсем нет</label></p>
+        <p class="interval"><label for="soso"><input id="soso" value="soso" type="radio" name="task">Так себе</label></p>
+        <p class="interval"><label for="hard"><input id="hard" value="hard" type="radio" name="task">Еле справились</label></p>
+    </fieldset>
+    <p><input type="submit" ></p>
+</form>
+</div>
+</body>
+</html>
