@@ -5,7 +5,7 @@
     background-color: #fff4d2;
 }
 body {
-    width: 690px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
 	background-color: #263238
@@ -42,4 +42,53 @@ fieldset.marg
 }
 textarea.comment{
 margin-top: -12px;
+}
+.c {
+    border: 0.5px solid #333;
+    display: inline-block;
+    padding: 3px 21px;
+    text-decoration: none;
+    color: #000;
+    background: #a6a6a6;
+    height: 14px;
+}
+.a2 {
+    width: 100px;
+    margin: auto;
+    padding: 20px 20px;
+    background-color: #fff4d2;
+}
+.a3 {
+    width: 900px;
+    margin: auto;
+    background-color: #fff4d2;
+    font-size: small;
+}
+.t1{
+	width: 100%;
+    margin: auto;
+    border-width: 3px;
+}
+.t2{
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+}
+.t3{
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.tr1{
+    text-align: center;
+    font-weight: bold;
+}
+.tr2{
+    text-align: left;
+    font-weight: bold;
+}
+TD, TH {
+    padding: 3px;
+    border: 1px solid black;
 }
