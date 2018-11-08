@@ -72,9 +72,10 @@ margin-top: -12px;
 .t1{
 	width: 100%;
     margin: auto;
-    border-width: 3px;
+    border: 1px double black;
 }
 .t2{
+    border: 1px double black;
     width: 65%;
     margin: auto;
     margin-top: 20px;
@@ -106,4 +107,19 @@ TD, TH {
     text-align:center;
     position: relative;
     margin:0 auto;
+}
+.con1 {
+    width: 13%;
+}
+.con2 {
+   width: 21%;
+}
+.con3 {
+    width: 25%;
+}
+.con4 {
+    width: 57%;
+}
+.con5 {
+    width: 30%;
 }
