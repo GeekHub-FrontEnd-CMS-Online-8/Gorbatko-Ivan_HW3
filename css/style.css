@@ -36,6 +36,10 @@ p.interval
 { 
     margin: auto;
     }
+p.interval2
+{
+    margin-top: -12px;
+}
 fieldset.marg
 {
     margin-top: 20px;
